@@ -109,11 +109,15 @@ Tablets - 768px
   /**********   Main Content  **********/
   .main-container {
     width: 90%;
+    margin: 20px 0;
   }
   .heading-1,
   .heading-2 {
     text-align: center;
     width: 80%;
+  }
+  .social-links-2 {
+    margin-top: 50px;
   }
   .grid-container {
     -ms-flex-wrap: wrap-reverse;
@@ -194,13 +198,15 @@ Phones - 400px
   .heading-2 h1 {
     font-size: 1.5rem;
   }
-  /**********  Skills and Technologies  **********/
   .grid-container {
     width: 90%;
   }
   .icon-grid img {
     width: 100%;
     min-width: 80%;
+  }
+  .figma-icon img {
+    height: 80px;
   }
   /**********  Portfolio  **********/
   .project-grid {
@@ -215,7 +221,17 @@ Phones - 400px
     width: 80%;
   }
   .social-links-2 img {
+    width: 100%;
     padding: 0 5px;
+  }
+}
+
+/****************************** 
+Phones - 375px
+******************************/
+@media only screen and (max-width: 280px) {
+  .figma-icon img {
+    height: 70px;
   }
 }
 
@@ -234,5 +250,8 @@ Phones - 280px
     height: 0px;
     padding: 15px 0;
   }
+  .figma-icon img {
+    height: 60px;
+  }
 }
-/*# sourceMappingURL=media2.css.map */
+/*# sourceMappingURL=media.css.map */
