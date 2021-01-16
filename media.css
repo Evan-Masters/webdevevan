@@ -1,34 +1,29 @@
 /****************************** 
 Desktop - 1250px
 ******************************/
-
 @media only screen and (max-width: 1250px) {
   /**********   Global  **********/
-
   .sidebar {
     width: 20%;
   }
-
   main,
   footer {
     margin-left: 20%;
   }
-
   /**********  Main Content  **********/
-
   .main-container {
     width: 90%;
     margin: 50px 0;
   }
-
   /**********  Skills and Technologies  **********/
-
-  .grid-container-2 {
+  .grid-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-
-  .icon-grid img {
+  .skill-icon img {
     min-width: 50%;
   }
 }
@@ -36,37 +31,28 @@ Desktop - 1250px
 /****************************** 
 Desktop - 1050px
 ******************************/
-
 @media only screen and (max-width: 1050px) {
   /**********   Global  **********/
-
   header {
     display: none;
   }
-
   main,
   footer {
     margin-left: 0;
   }
-
   /**********   Main Content  **********/
-
   /**********  Portfolio  **********/
-
   .project-grid {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
   .project-container img {
     width: 80%;
   }
-
   /**********  Footer  **********/
-
   form {
     width: 80%;
   }
-
   #status {
     width: 80%;
   }
@@ -74,20 +60,19 @@ Desktop - 1050px
 
 @media only screen and (max-width: 870px) {
   /**********   Main Content  **********/
-
   .hero-wrapper {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
-
   .profile-picture {
     text-align: center;
   }
-
   .profile-picture img {
     padding-bottom: 25px;
   }
-
   .heading-1 {
     text-align: center;
   }
@@ -96,59 +81,48 @@ Desktop - 1050px
 /****************************** 
 Tablets - 768px
 ******************************/
-
 @media only screen and (max-width: 768px) {
   /**********   Global  **********/
-
   main,
   footer {
     margin: 0;
   }
-
   h1 {
     font-size: 2rem;
+    text-align: center;
   }
-
   a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 400;
   }
-
   /**********  Header  **********/
-
   .sidebar {
     display: none;
   }
-
+  .sidebar {
+    display: none;
+  }
   /**********   Main Content  **********/
-
   .main-container {
     width: 90%;
   }
-
+  .heading-1 {
+    width: 380px;
+  }
+  /**********  Skills and Technologies  **********/
+  .grid-container {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
   .skill-icon img {
     min-width: 50%;
     min-height: 50%;
   }
-  .sidebar {
-    display: none;
-  }
-
-  .heading-1 {
-    width: 380px;
-  }
-
-  /**********  Skills and Technologies  **********/
-
-  .grid-container-2 {
-    flex-wrap: wrap-reverse;
-  }
-
   /**********  Portfolio  **********/
-
   .project-grid {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -156,88 +130,93 @@ Tablets - 768px
 /****************************** 
 Phones - 505px
 ******************************/
-
 @media only screen and (max-width: 505px) {
   /**********  Header  **********/
-
   .sidebar {
     display: none;
   }
-
   /**********  Main Content  **********/
-
   .main-container {
     width: 100%;
     margin: 20px 0;
   }
-
   main,
   footer {
     margin: 0;
   }
-
   .heading-1 {
     text-align: center;
-    width: 380px;
+    width: 90%;
   }
-
   .social-links-2 img {
     max-width: 40px;
   }
-
   .social-links-2 li {
     display: inline-block;
     height: 65px;
   }
-
   /**********  Skills and Technologies  **********/
-
-  /**********  Portfolio  **********/
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
   .skill-icon img {
     padding: 15px 20px;
   }
+  /**********  Portfolio  **********/
+  .project-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
   /**********  Footer  **********/
-
   form {
     width: 90%;
   }
-
   .form-container {
     width: 100%;
   }
-
   #status {
     width: 90%;
   }
 }
 
 /****************************** 
-Phones - 375px
+Phones - 400px
 ******************************/
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   /**********  Main Content  **********/
-
-  .grid-item .heading-1 {
-    width: 400px;
+  .main-container {
+    width: 95%;
+  }
+  .heading-1,
+  .heading-2 {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  /**********  Skills and Technologies  **********/
+  .grid-container {
+    width: 90%;
+  }
+  .icon-grid img {
+    width: 100%;
+    min-width: 80%;
   }
   /**********  Portfolio  **********/
-
   .project-grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
   /**********  Footer  **********/
-
   form {
     width: 80%;
   }
-
   #status {
     width: 80%;
   }
+  /****************************** 
+Phones - 280px
+******************************/
 }
+
+@media only screen and (max-width: 400px) and (max-width: 280px) {
+  /**********  Portfolio  **********/
+}
+/*# sourceMappingURL=media2.css.map */

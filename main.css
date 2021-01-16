@@ -1,9 +1,7 @@
 /******************************
 Golobal Styles  
 ******************************/
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-
 :root {
   --main: #13967e;
   --main-dark: #123230;
@@ -12,6 +10,7 @@ Golobal Styles
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -82,15 +81,20 @@ footer {
 }
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /******************************
 Backgrounds
 ******************************/
-
 .background-image {
   background: url(assets/images/background.png);
   background-repeat: repeat;
@@ -98,7 +102,11 @@ Backgrounds
 }
 
 .light-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.92);
   min-height: 50%;
@@ -114,7 +122,6 @@ Backgrounds
 /****************************** 
 Header  
 ******************************/
-
 header {
   position: fixed;
   left: 0;
@@ -134,23 +141,36 @@ header {
 
 .sidebar img {
   max-width: 100%;
-
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 /******************************  
 Navbar
 ******************************/
-
 .navbar {
   list-style-type: none;
 }
 
 .navbar li:nth-child(even) {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--main-dark)),
+    to(var(--main))
+  );
   background: linear-gradient(90deg, var(--main-dark), var(--main));
 }
 
 .navbar li:nth-child(odd) {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--main)),
+    to(var(--main-dark))
+  );
   background: linear-gradient(90deg, var(--main), var(--main-dark));
 }
 
@@ -175,7 +195,6 @@ Navbar
 /****************************** 
 Aside
 ******************************/
-
 .aside-container {
   position: relative;
   background: linear-gradient(164.88deg, black, var(--main));
@@ -184,9 +203,18 @@ Aside
 
 .aside {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 55%;
@@ -201,23 +229,26 @@ Aside
 }
 
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 30px;
 }
 
 .social-links img {
   border-radius: 5px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .social-links img:hover {
+  -webkit-box-shadow: 0 0 15px white;
   box-shadow: 0 0 15px white;
 }
 
 /****************************** 
 Main Content
 ******************************/
-
 .main-container {
   width: 80%;
   margin: 50px 0;
@@ -225,6 +256,8 @@ Main Content
 
 .hero-container {
   padding: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -249,8 +282,14 @@ Main Content
 
 .social-links-2 {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
@@ -259,6 +298,7 @@ Main Content
   display: inline-block;
   height: 78px;
 }
+
 .social-links-2 img {
   padding: 0 0 0 0;
 }
@@ -279,24 +319,36 @@ Main Content
 /****************************** 
 Skills and Technologies
 ******************************/
-
 .dark-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.grid-container-2 {
+.grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   width: 80%;
   padding: 25px 0;
 }
 
 .icon-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px;
 }
@@ -324,7 +376,6 @@ Skills and Technologies
 /****************************** 
 portfolio
 ******************************/
-
 .portfolio {
   background-color: var(--light-gray);
 }
@@ -346,6 +397,7 @@ portfolio
   width: 70%;
   margin: auto;
   border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -359,11 +411,18 @@ portfolio
 }
 
 .project-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   padding: 25px;
@@ -372,7 +431,6 @@ portfolio
 /****************************** 
 Footer
 ******************************/
-
 footer {
   background: url(assets/images/background.png);
   background-color: rgba(255, 255, 255, 0.95);
@@ -381,9 +439,18 @@ footer {
 }
 
 footer .dark-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -393,11 +460,16 @@ footer .dark-overlay {
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   width: 50%;
-  background-color: rgb(43, 49, 54);
+  background-color: #2b3136;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
@@ -432,7 +504,7 @@ input {
 
 .input-container-1 {
   display: inline-block;
-  width: 49%;
+  width: 48%;
 }
 
 .input-container-1 input {
@@ -456,14 +528,26 @@ textarea {
 }
 
 .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 button {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 5px 40px;
   margin: 10px 0 0 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--main)),
+    to(var(--main-dark))
+  );
   background: linear-gradient(180deg, var(--main), var(--main-dark));
   color: white;
   border: none;
@@ -475,10 +559,13 @@ button {
 button:hover {
   border: 1px solid white;
   cursor: pointer;
+  -webkit-box-shadow: 0 0 8px white;
   box-shadow: 0 0 8px white;
 }
 
 .inline-input .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
@@ -486,7 +573,11 @@ button:hover {
 .copywrite-container {
   position: relative;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   padding: 15px 0;
@@ -513,13 +604,30 @@ button:hover {
 #status.success {
   background-color: var(--main);
   color: white;
+  -webkit-animation: status 4s ease forwards;
   animation: status 4s ease forwards;
 }
 
 #status.error {
   background-color: #ff1d4e;
   color: white;
+  -webkit-animation: status 4s ease forwards;
   animation: status 4s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @keyframes status {
@@ -527,14 +635,13 @@ button:hover {
     opacity: 1;
     pointer-events: all;
   }
-
   90% {
     opacity: 1;
     pointer-events: all;
   }
-
   100% {
     opacity: 0;
     pointer-events: none;
   }
 }
+/*# sourceMappingURL=style.css.map */
