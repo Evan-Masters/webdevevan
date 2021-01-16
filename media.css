@@ -152,9 +152,6 @@ Phones - 505px
     width: 100%;
     margin: 20px 0;
   }
-  .social-links-2 img {
-    max-width: 40px;
-  }
   .social-links-2 li {
     display: inline-block;
     height: 65px;

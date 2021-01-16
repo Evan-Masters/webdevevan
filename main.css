@@ -301,14 +301,6 @@ Main Content
   height: 78px;
 }
 
-.social-links-2 img {
-  padding: 0 0 0 0;
-}
-
-.social-links-2 img:hover {
-  padding: 0 0 0 0;
-}
-
 .social-links-2 li:hover {
   border-bottom: 2px solid black;
 }
