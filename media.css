@@ -1,0 +1,243 @@
+/****************************** 
+Desktop - 1250px
+******************************/
+
+@media only screen and (max-width: 1250px) {
+  /**********   Global  **********/
+
+  .sidebar {
+    width: 20%;
+  }
+
+  main,
+  footer {
+    margin-left: 20%;
+  }
+
+  /**********  Main Content  **********/
+
+  .main-container {
+    width: 90%;
+    margin: 50px 0;
+  }
+
+  /**********  Skills and Technologies  **********/
+
+  .grid-container-2 {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .icon-grid img {
+    min-width: 50%;
+  }
+}
+
+/****************************** 
+Desktop - 1050px
+******************************/
+
+@media only screen and (max-width: 1050px) {
+  /**********   Global  **********/
+
+  header {
+    display: none;
+  }
+
+  main,
+  footer {
+    margin-left: 0;
+  }
+
+  /**********   Main Content  **********/
+
+  /**********  Portfolio  **********/
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-container img {
+    width: 80%;
+  }
+
+  /**********  Footer  **********/
+
+  form {
+    width: 80%;
+  }
+
+  #status {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  /**********   Main Content  **********/
+
+  .hero-wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .profile-picture {
+    text-align: center;
+  }
+
+  .profile-picture img {
+    padding-bottom: 25px;
+  }
+
+  .heading-1 {
+    text-align: center;
+  }
+}
+
+/****************************** 
+Tablets - 768px
+******************************/
+
+@media only screen and (max-width: 768px) {
+  /**********   Global  **********/
+
+  main,
+  footer {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /**********  Header  **********/
+
+  .sidebar {
+    display: none;
+  }
+
+  /**********   Main Content  **********/
+
+  .main-container {
+    width: 90%;
+  }
+
+  .skill-icon img {
+    min-width: 50%;
+    min-height: 50%;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .heading-1 {
+    width: 380px;
+  }
+
+  /**********  Skills and Technologies  **********/
+
+  .grid-container-2 {
+    flex-wrap: wrap-reverse;
+  }
+
+  /**********  Portfolio  **********/
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/****************************** 
+Phones - 505px
+******************************/
+
+@media only screen and (max-width: 505px) {
+  /**********  Header  **********/
+
+  .sidebar {
+    display: none;
+  }
+
+  /**********  Main Content  **********/
+
+  .main-container {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  main,
+  footer {
+    margin: 0;
+  }
+
+  .heading-1 {
+    text-align: center;
+    width: 380px;
+  }
+
+  .social-links-2 img {
+    max-width: 40px;
+  }
+
+  .social-links-2 li {
+    display: inline-block;
+    height: 65px;
+  }
+
+  /**********  Skills and Technologies  **********/
+
+  /**********  Portfolio  **********/
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-icon img {
+    padding: 15px 20px;
+  }
+  /**********  Footer  **********/
+
+  form {
+    width: 90%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  #status {
+    width: 90%;
+  }
+}
+
+/****************************** 
+Phones - 375px
+******************************/
+
+@media only screen and (max-width: 375px) {
+  /**********  Main Content  **********/
+
+  .grid-item .heading-1 {
+    width: 400px;
+  }
+  /**********  Portfolio  **********/
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /**********  Footer  **********/
+
+  form {
+    width: 80%;
+  }
+
+  #status {
+    width: 80%;
+  }
+}
