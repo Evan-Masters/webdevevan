@@ -413,6 +413,10 @@ portfolio
   opacity: 0.8;
 }
 
+.project-container span {
+  color: var(--main);
+}
+
 .project-grid {
   display: -ms-grid;
   display: grid;
