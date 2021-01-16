@@ -38,11 +38,15 @@ p {
 }
 
 h1 {
-  border-bottom: 3px solid var(--main);
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+.head-wrapper {
+  border-bottom: 0.2rem solid var(--main);
+  display: inline-block;
 }
 
 li {
@@ -74,6 +78,7 @@ footer {
 .heading-1 p,
 .heading-2 p {
   padding-top: 15px;
+  text-align: left;
 }
 
 .hidden {
@@ -261,11 +266,6 @@ Main Content
   align-items: center;
 }
 
-.grid-item-3 {
-  width: 100%;
-  margin-top: 75px;
-}
-
 .heading-1 {
   width: 500px;
   display: inline-block;
@@ -292,6 +292,8 @@ Main Content
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  margin-top: 75px;
 }
 
 .social-links-2 li {
@@ -319,6 +321,7 @@ Main Content
 /****************************** 
 Skills and Technologies
 ******************************/
+
 .dark-overlay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +340,7 @@ Skills and Technologies
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  width: 80%;
+  width: 90%;
   padding: 25px 0;
 }
 
