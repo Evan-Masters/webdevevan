@@ -89,10 +89,6 @@ Tablets - 768px
   footer {
     margin: 0;
   }
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
   a {
     text-decoration: none;
     color: white;
@@ -184,16 +180,15 @@ Phones - 400px
 ******************************/
 @media only screen and (max-width: 400px) {
   /**********  Main Content  **********/
+  h1 {
+    font-size: 2rem;
+  }
   .main-container {
     width: 95%;
   }
   .heading-1,
   .heading-2 {
     width: 90%;
-  }
-  .heading-1 h1,
-  .heading-2 h1 {
-    font-size: 1.5rem;
   }
   .grid-container {
     width: 90%;
@@ -227,6 +222,9 @@ Phones - 400px
 Phones - 375px
 ******************************/
 @media only screen and (max-width: 280px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   .figma-icon img {
     height: 70px;
   }
