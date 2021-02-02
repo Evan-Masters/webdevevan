@@ -2,6 +2,10 @@
   .hero-container {
     width: 70%;
   }
+
+  form {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -60,6 +64,12 @@ Desktop - 1250px
 
   .skill-icon img {
     min-width: 50%;
+  }
+
+  /**********  Footer  **********/
+
+  form {
+    width: 80%;
   }
 }
 
@@ -360,13 +370,16 @@ Phones - 400px
 Phones - 375px
 ******************************/
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 375px) {
   h1 {
     font-size: 1.5rem;
   }
 
   .figma-icon img {
     height: 70px;
+  }
+  form {
+    width: 95%;
   }
 }
 
@@ -375,6 +388,14 @@ Phones - 280px
 ******************************/
 
 @media only screen and (max-width: 280px) {
+  form {
+    width: 98%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
   /**********  Portfolio  **********/
 
   .social-links-2 p {

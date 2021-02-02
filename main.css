@@ -170,6 +170,12 @@ header {
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
 }
 
 /******************************  
@@ -361,7 +367,6 @@ Skills and Technologies
   -ms-flex-line-pack: center;
   align-content: center;
   width: 80%;
-  margin: 25px 0;
   height: 100%;
 }
 
@@ -378,13 +383,24 @@ Skills and Technologies
 }
 
 .skill-icon img {
-  padding: 15px 30px;
+  padding: 10px 15px;
   min-width: 100%;
-  height: 100px;
+  height: 90px;
 }
 
 .js-icon img {
-  height: 85px;
+  margin-top: 5px;
+  height: 80px;
+}
+
+.js-icon p {
+  margin-top: 6px;
+}
+
+.skill-icon p {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 10px;
 }
 
 /****************************** 
