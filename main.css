@@ -3,8 +3,8 @@ Golobal Styles
 ******************************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 :root {
-  --main: #13967e;
-  --main-dark: #123230;
+  --main: #00bbaa;
+  --main-dark: #000f12;
   --gray: #777;
   --light-gray: #ebebeb;
 }
@@ -33,20 +33,44 @@ body {
 
 body,
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0.5;
 }
 
 h1 {
-  display: inline-block;
+  display: inline;
   padding-bottom: 7px;
   font-weight: 400;
   font-size: 2.5rem;
 }
 
-.head-wrapper {
-  border-bottom: 0.2rem solid var(--main);
+.heading-1 {
+  width: 500px;
   display: inline-block;
+}
+
+.heading-2 {
+  margin: 15px;
+  max-width: 420px;
+}
+
+.heading-2 h1,
+.heading-2 p {
+  font-weight: 300;
+}
+
+.heading-1 p,
+.heading-2 p {
+  padding-top: 15px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.head-wrapper {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 0.2rem solid var(--main);
 }
 
 li {
@@ -75,12 +99,6 @@ footer {
   color: white;
 }
 
-.heading-1 p,
-.heading-2 p {
-  padding-top: 15px;
-  text-align: left;
-}
-
 .hidden {
   display: none;
 }
@@ -100,10 +118,13 @@ footer {
 /******************************
 Backgrounds
 ******************************/
+
 .background-image {
-  background: url(assets/images/background.png);
+  background: url(assets/images/background-pattern.png);
   background-repeat: repeat;
   background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .light-overlay {
@@ -113,20 +134,21 @@ Backgrounds
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.92);
-  min-height: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  min-height: 50vh;
   min-width: 100%;
 }
 
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.9);
-  min-height: 50%;
+  background-color: rgba(0, 0, 0, 0.95);
+  min-height: 50vh;
   min-width: 100%;
 }
 
 /****************************** 
 Header  
 ******************************/
+
 header {
   position: fixed;
   left: 0;
@@ -153,6 +175,7 @@ header {
 /******************************  
 Navbar
 ******************************/
+
 .navbar {
   list-style-type: none;
 }
@@ -182,6 +205,7 @@ Navbar
 .navbar a {
   display: block;
   padding: 10px 15px;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -189,17 +213,20 @@ Navbar
 }
 
 .navbar li {
+  border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 }
 
 .navbar li:hover {
   background: black;
+  border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
 
 /****************************** 
 Aside
 ******************************/
+
 .aside-container {
   position: relative;
   background: linear-gradient(164.88deg, black, var(--main));
@@ -237,7 +264,7 @@ Aside
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30px;
+  width: 35px;
 }
 
 .social-links img {
@@ -254,21 +281,21 @@ Aside
 /****************************** 
 Main Content
 ******************************/
-.main-container {
-  width: 80%;
-  margin: 50px 0;
-}
 
-.hero-container {
-  padding: 20px;
+.main-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
-.heading-1 {
-  width: 500px;
-  display: inline-block;
+.hero-container {
+  width: 60%;
+  padding: 20px;
 }
 
 .profile-picture {
@@ -293,21 +320,22 @@ Main Content
   align-items: center;
   text-align: center;
   width: 100%;
-  margin-top: 75px;
+  margin-top: 50px;
+}
+
+.social-links-2 a {
+  display: inline block;
+  font-weight: 400;
 }
 
 .social-links-2 li {
   display: inline-block;
   height: 78px;
+  margin: 0 5%;
 }
 
 .social-links-2 li:hover {
   border-bottom: 2px solid black;
-}
-
-.social-links-2 p {
-  display: inline block;
-  font-weight: 500;
 }
 
 /****************************** 
@@ -329,11 +357,12 @@ Skills and Technologies
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-evenly;
   -ms-flex-line-pack: center;
   align-content: center;
-  width: 90%;
-  padding: 25px 0;
+  width: 80%;
+  margin: 25px 0;
+  height: 100%;
 }
 
 .icon-grid {
@@ -345,7 +374,7 @@ Skills and Technologies
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 20px;
+  height: 50%;
 }
 
 .skill-icon img {
@@ -358,19 +387,10 @@ Skills and Technologies
   height: 85px;
 }
 
-.heading-2 {
-  margin: 15px;
-  max-width: 420px;
-}
-
-.heading-2 h1,
-.heading-2 p {
-  font-weight: 300;
-}
-
 /****************************** 
 portfolio
 ******************************/
+
 .portfolio {
   background-color: var(--light-gray);
 }
@@ -388,7 +408,7 @@ portfolio
 
 .project-container img {
   text-align: center;
-  display: block;
+  display: inline;
   width: 70%;
   margin: auto;
   border-radius: 5px;
@@ -430,11 +450,13 @@ portfolio
 /****************************** 
 Footer
 ******************************/
+
 footer {
-  background: url(assets/images/background.png);
+  background: url(assets/images/background-pattern.png);
   background-color: rgba(255, 255, 255, 0.95);
   background-repeat: repeat;
   background-size: cover;
+  background-position: center;
 }
 
 footer .dark-overlay {
@@ -470,12 +492,11 @@ form {
   width: 50%;
   background-color: #2b3136;
   border-radius: 10px;
-  padding: 20px;
+  padding: 35px;
   margin-bottom: 20px;
 }
 
 .form-container {
-  padding: 20px 0 0 0;
   width: 90%;
 }
 
@@ -538,7 +559,7 @@ textarea {
 button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 5px 40px;
+  padding: 7px 40px;
   margin: 10px 0 0 0;
   background: -webkit-gradient(
     linear,
@@ -549,10 +570,9 @@ button {
   );
   background: linear-gradient(180deg, var(--main), var(--main-dark));
   color: white;
-  border: none;
   border-radius: 5px;
   font-size: 16px;
-  border: 1px solid transparent;
+  border: 1px solid #2b3136;
 }
 
 button:hover {

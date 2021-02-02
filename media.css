@@ -1,27 +1,63 @@
+@media only screen and (max-width: 1550px) {
+  .hero-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-container {
+    width: 90%;
+  }
+
+  .grid-container {
+    width: 90%;
+  }
+}
+
 /****************************** 
 Desktop - 1250px
 ******************************/
+
 @media only screen and (max-width: 1250px) {
   /**********   Global  **********/
   .sidebar {
     width: 20%;
   }
+
   main,
   footer {
     margin-left: 20%;
   }
+
+  /**********  Backgrounds  **********/
+  .background-image {
+    height: auto;
+  }
+
+  .light-overlay {
+    height: 100%;
+  }
+
+  .dark-overlay {
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
   /**********  Main Content  **********/
+
   .main-container {
     width: 90%;
-    margin: 50px 0;
+    margin: 0;
+    padding: 20px 0;
   }
+
   .grid-container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
   }
+
   .skill-icon img {
     min-width: 50%;
   }
@@ -30,25 +66,38 @@ Desktop - 1250px
 /****************************** 
 Desktop - 1050px
 ******************************/
+
 @media only screen and (max-width: 1050px) {
   /**********   Global  **********/
+
   header {
     display: none;
   }
+
   main,
   footer {
     margin-left: 0;
   }
+
   /**********   Main Content  **********/
+
+  .heading-2 {
+    text-align: center;
+  }
+
   /**********  Portfolio  **********/
+
   .project-grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
   .project-container img {
     width: 80%;
   }
+
   /**********  Footer  **********/
+
   form {
     width: 80%;
   }
@@ -59,6 +108,7 @@ Desktop - 1050px
 
 @media only screen and (max-width: 870px) {
   /**********   Main Content  **********/
+
   .hero-wrapper {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -83,47 +133,81 @@ Desktop - 1050px
 /****************************** 
 Tablets - 768px
 ******************************/
+
 @media only screen and (max-width: 768px) {
   /**********   Global  **********/
+
   main,
   footer {
     margin: 0;
   }
+
   a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 400;
   }
+
   /**********  Header  **********/
+
   .sidebar {
     display: none;
   }
+
   .sidebar {
     display: none;
   }
+
+  /**********  Backgrounds  **********/
+  .background-image {
+    height: auto;
+  }
+
+  .light-overlay {
+    height: 100%;
+  }
+
+  .dark-overlay {
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
   /**********   Main Content  **********/
+
   .main-container {
     width: 90%;
-    margin: 20px 0;
+    margin: 0;
   }
+
   .heading-1,
   .heading-2 {
     text-align: center;
     width: 80%;
   }
+
   .social-links-2 {
     margin-top: 50px;
   }
+
+  .social-links-2 li:hover {
+    border-bottom: none;
+  }
+
   .grid-container {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+    margin: 0;
   }
+
   .skill-icon img {
     min-width: 50%;
     min-height: 50%;
   }
+
   /**********  Portfolio  **********/
+
   .project-grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -133,43 +217,84 @@ Tablets - 768px
 /****************************** 
 Phones - 505px
 ******************************/
+
 @media only screen and (max-width: 505px) {
   /**********  Global  **********/
+
   main,
   footer {
     margin: 0;
   }
+
   /**********  Header  **********/
+
   .sidebar {
     display: none;
   }
+
+  /**********  Backgrounds  **********/
+  .background-image {
+    height: auto;
+  }
+
+  .light-overlay {
+    height: 100%;
+  }
+
+  .dark-overlay {
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
   /**********  Main Content  **********/
+
   .main-container {
     width: 100%;
-    margin: 20px 0;
+    margin: 0;
+    padding: 20px 0;
   }
+
+  .hero-container {
+    width: 90%;
+    padding: 20px 0;
+  }
+
   .social-links-2 li {
     display: inline-block;
     height: 65px;
   }
+
   .social-links-2 {
     margin-top: 40px;
   }
+
   .skill-icon img {
     padding: 15px 20px;
   }
+
+  .grid-container {
+    margin: 0;
+    width: 80%;
+  }
+
   /**********  Portfolio  **********/
+
   .project-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
   /**********  Footer  **********/
+
   form {
     width: 90%;
   }
+
   .form-container {
     width: 100%;
   }
+
   #status {
     width: 90%;
   }
@@ -178,40 +303,53 @@ Phones - 505px
 /****************************** 
 Phones - 400px
 ******************************/
+
 @media only screen and (max-width: 400px) {
   /**********  Main Content  **********/
+
   h1 {
     font-size: 2rem;
   }
+
   .main-container {
     width: 95%;
   }
+
   .heading-1,
   .heading-2 {
     width: 90%;
   }
+
   .grid-container {
     width: 90%;
   }
+
   .icon-grid img {
     width: 100%;
     min-width: 80%;
   }
+
   .figma-icon img {
     height: 80px;
   }
+
   /**********  Portfolio  **********/
+
   .project-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
   /**********  Footer  **********/
+
   form {
     width: 80%;
   }
+
   #status {
     width: 80%;
   }
+
   .social-links-2 img {
     width: 100%;
     padding: 0 5px;
@@ -221,10 +359,12 @@ Phones - 400px
 /****************************** 
 Phones - 375px
 ******************************/
+
 @media only screen and (max-width: 280px) {
   h1 {
     font-size: 1.5rem;
   }
+
   .figma-icon img {
     height: 70px;
   }
@@ -233,18 +373,23 @@ Phones - 375px
 /****************************** 
 Phones - 280px
 ******************************/
+
 @media only screen and (max-width: 280px) {
   /**********  Portfolio  **********/
+
   .social-links-2 p {
     display: none;
   }
+
   .social-links-2 {
     margin-top: 20px;
   }
+
   .social-links-2 li {
     height: 0px;
     padding: 15px 0;
   }
+
   .figma-icon img {
     height: 60px;
   }
