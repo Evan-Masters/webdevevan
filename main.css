@@ -325,7 +325,6 @@ Main Content
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  width: 100%;
   margin-top: 50px;
 }
 
@@ -342,6 +341,10 @@ Main Content
 
 .social-links-2 li:hover {
   border-bottom: 2px solid black;
+}
+
+.social-links-2 img {
+  height: 40px;
 }
 
 /****************************** 
