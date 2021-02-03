@@ -388,12 +388,12 @@ Skills and Technologies
 .skill-icon img {
   padding: 10px 15px;
   min-width: 100%;
-  height: 90px;
+  height: 80px;
 }
 
 .js-icon img {
-  margin-top: 5px;
-  height: 80px;
+  margin-top: 2px;
+  height: 70px;
 }
 
 .js-icon p {
