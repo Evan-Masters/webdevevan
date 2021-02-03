@@ -321,6 +321,14 @@ Phones - 400px
     font-size: 2rem;
   }
 
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .light-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
   .main-container {
     width: 95%;
   }
