@@ -331,12 +331,13 @@ Phones - 400px
   }
 
   .grid-container {
-    width: 90%;
+    width: 80%;
   }
 
   .icon-grid img {
     width: 100%;
     min-width: 80%;
+    padding: 10px;
   }
 
   .figma-icon img {

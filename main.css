@@ -140,7 +140,7 @@ Backgrounds
 }
 
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.93);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 50vh;
   min-width: 100%;
 }
