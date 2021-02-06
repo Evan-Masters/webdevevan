@@ -196,6 +196,10 @@ Tablets - 768px
     text-align: center;
   }
 
+  .heading-1 {
+    width: 80%;
+  }
+
   .heading-2 {
     padding: 0 0 25px 0;
     width: 100%;
