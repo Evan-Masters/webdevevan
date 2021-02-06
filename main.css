@@ -51,8 +51,8 @@ h1 {
 }
 
 .heading-2 {
-  margin: 15px;
-  max-width: 420px;
+  padding: 0 25px 25px;
+  max-width: 500px;
 }
 
 .heading-2 h1,
@@ -389,15 +389,6 @@ Skills and Technologies
   padding: 10px 15px;
   min-width: 100%;
   height: 80px;
-}
-
-.js-icon img {
-  margin-top: 2px;
-  height: 70px;
-}
-
-.js-icon p {
-  margin-top: 6px;
 }
 
 .skill-icon p {

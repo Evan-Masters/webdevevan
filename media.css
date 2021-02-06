@@ -194,7 +194,11 @@ Tablets - 768px
   .heading-1,
   .heading-2 {
     text-align: center;
-    width: 80%;
+  }
+
+  .heading-2 {
+    padding: 0 0 25px 0;
+    width: 100%;
   }
 
   .social-links-2 {
@@ -329,23 +333,12 @@ Phones - 400px
     width: 95%;
   }
 
-  .heading-1,
-  .heading-2 {
-    width: 90%;
-  }
-
   .grid-container {
     width: 80%;
   }
 
   .icon-grid img {
-    width: 100%;
-    min-width: 80%;
     padding: 10px;
-  }
-
-  .figma-icon img {
-    height: 80px;
   }
 
   /**********  Portfolio  **********/
@@ -380,9 +373,6 @@ Phones - 375px
     font-size: 1.5rem;
   }
 
-  .figma-icon img {
-    height: 70px;
-  }
   form {
     width: 95%;
   }
@@ -414,10 +404,6 @@ Phones - 280px
   .social-links-2 li {
     height: 0px;
     padding: 15px 0;
-  }
-
-  .figma-icon img {
-    height: 60px;
   }
 }
 /*# sourceMappingURL=media.css.map */
