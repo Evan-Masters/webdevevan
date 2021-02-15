@@ -167,6 +167,10 @@ Tablets - 768px
 
   /**********  Backgrounds  **********/
 
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.88);
+  }
+
   .background-image {
     height: auto;
   }
