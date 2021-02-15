@@ -166,6 +166,11 @@ Tablets - 768px
   }
 
   /**********  Backgrounds  **********/
+
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
   .background-image {
     height: auto;
   }
@@ -318,10 +323,6 @@ Phones - 400px
 
   h1 {
     font-size: 2rem;
-  }
-
-  .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .main-container {
