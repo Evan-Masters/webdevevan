@@ -372,9 +372,6 @@ Phones - 375px
 ******************************/
 
 @media only screen and (max-width: 375px) {
-  h1 {
-    font-size: 1.5rem;
-  }
 
   form {
     width: 95%;
