@@ -171,6 +171,13 @@ Tablets - 768px
     background-color: rgba(0, 0, 0, 0.88);
   }
 
+  .dark-overlay {
+    background: linear-gradient(
+      180deg, 
+      rgba(0, 0, 0, 0.85), 
+      rgba(0, 0, 0, 0.9));
+  }
+
   .background-image {
     height: auto;
   }
