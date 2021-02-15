@@ -103,6 +103,19 @@ footer {
   display: none;
 }
 
+.main-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,23 +137,16 @@ Backgrounds
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 
 .light-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.93);
   min-height: 50vh;
   min-width: 100%;
 }
 
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.8);
   min-height: 50vh;
   min-width: 100%;
 }
@@ -288,17 +294,6 @@ Aside
 Main Content
 ******************************/
 
-.main-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
 .hero-container {
   width: 60%;
   padding: 20px;
@@ -351,15 +346,6 @@ Main Content
 Skills and Technologies
 ******************************/
 
-.dark-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,7 +373,7 @@ Skills and Technologies
 
 .skill-icon img {
   padding: 10px 15px;
-  height: 70px;
+  height: 80px;
 }
 
 .skill-icon p {
@@ -460,14 +446,7 @@ portfolio
 Footer
 ******************************/
 
-footer {
-  background: url(assets/images/background-pattern.png);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-footer .dark-overlay {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,6 +467,10 @@ footer .dark-overlay {
   margin: 25px 0;
 }
 
+.form-container {
+  width: 90%;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,10 +485,6 @@ form {
   border-radius: 10px;
   padding: 35px;
   margin-bottom: 20px;
-}
-
-.form-container {
-  width: 90%;
 }
 
 label {
