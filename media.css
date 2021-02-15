@@ -62,10 +62,6 @@ Desktop - 1250px
     justify-content: center;
   }
 
-  .skill-icon img {
-    min-width: 50%;
-  }
-
   /**********  Footer  **********/
 
   form {
@@ -217,11 +213,6 @@ Tablets - 768px
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
     margin: 0;
-  }
-
-  .skill-icon img {
-    min-width: 50%;
-    min-height: 50%;
   }
 
   /**********  Portfolio  **********/
