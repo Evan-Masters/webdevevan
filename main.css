@@ -225,10 +225,11 @@ Navbar
   display: block;
   padding: 10px 15px;
   text-align: center;
+  transition: 0.7s;
 }
 
 .navbar a:hover {
-  font-weight: 400;
+  letter-spacing: 4.5px;
 }
 
 .navbar li {
