@@ -152,8 +152,8 @@ Backgrounds
 .dark-overlay {
   background: linear-gradient(
     180deg, 
-    rgba(0, 0, 0, 0.9), 
-    rgba(0, 0, 0, 0.99));
+    rgba(0, 0, 0, 0.85), 
+    rgba(0, 0, 0, 0.95));
   min-height: 50vh;
   min-width: 100%;
 }
@@ -387,7 +387,6 @@ Skills and Technologies
 .skill-icon p {
   text-align: center;
   font-weight: 300;
-  padding-bottom: 10px;
 }
 
 /****************************** 
