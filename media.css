@@ -1,3 +1,8 @@
+/****************************** 
+Desktop - 1550px
+******************************/
+
+
 @media only screen and (max-width: 1550px) {
   .hero-container {
     width: 70%;
@@ -7,6 +12,12 @@
     width: 50%;
   }
 }
+
+
+/****************************** 
+Desktop - 1300px
+******************************/
+
 
 @media only screen and (max-width: 1300px) {
   .hero-container {
@@ -18,12 +29,16 @@
   }
 }
 
+
 /****************************** 
 Desktop - 1250px
 ******************************/
 
+
 @media only screen and (max-width: 1250px) {
+
   /**********   Global  **********/
+  
   .sidebar {
     width: 20%;
   }
@@ -34,6 +49,7 @@ Desktop - 1250px
   }
 
   /**********  Backgrounds  **********/
+
   .background-image {
     height: auto;
   }
@@ -62,6 +78,13 @@ Desktop - 1250px
     justify-content: center;
   }
 
+  /**********  Portfolio  **********/
+
+  .project-grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
   /**********  Footer  **********/
 
   form {
@@ -69,18 +92,48 @@ Desktop - 1250px
   }
 }
 
+
 /****************************** 
 Desktop - 1050px
 ******************************/
 
+
+@media only screen and (min-width: 1050px) {
+
+  /**********  Portfolio  **********/
+
+  .project-btn {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .project-img-wrapper:hover .project-btn {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
+
   /**********   Global  **********/
 
   header {
     display: none;
   }
 
-  main,
+  main, 
   footer {
     margin-left: 0;
   }
@@ -90,17 +143,14 @@ Desktop - 1050px
   .heading-2 {
     text-align: center;
   }
-
+  
   /**********  Portfolio  **********/
 
-  .project-grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+  .project-btn {
+    display: none;
   }
 
-  .project-container img {
-    width: 80%;
-  }
+  
 
   /**********  Footer  **********/
 
@@ -112,7 +162,14 @@ Desktop - 1050px
   }
 }
 
+
+/****************************** 
+Tablets - 870px
+******************************/
+
+
 @media only screen and (max-width: 870px) {
+
   /**********   Main Content  **********/
 
   .hero-wrapper {
@@ -122,25 +179,36 @@ Desktop - 1050px
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .profile-picture {
     text-align: center;
   }
+
   .profile-picture img {
     padding-bottom: 25px;
   }
+
   h1 {
     text-align: center;
   }
+
   .heading-1 p {
     text-align: left;
   }
+
+  .project-container {
+    width: 90%;
+  }
 }
+
 
 /****************************** 
 Tablets - 768px
 ******************************/
 
+
 @media only screen and (max-width: 768px) {
+
   /**********   Global  **********/
 
   main,
@@ -225,13 +293,6 @@ Tablets - 768px
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
     margin: 0;
-  }
-
-  /**********  Portfolio  **********/
-
-  .project-grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -406,4 +467,3 @@ Phones - 280px
     padding: 15px 0;
   }
 }
-/*# sourceMappingURL=media.css.map */
