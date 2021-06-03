@@ -87,16 +87,6 @@ a {
   font-weight: 300;
 }
 
-span {
-  color: #00bbaa;
-  font-weight: 500;
-}
-
-.client {
-  color: #ff1d4e;
-  font-weight: 500;
-}
-
 main,
 footer {
   margin-left: 18%;
@@ -299,7 +289,6 @@ Aside
   align-items: center;
   width: 100%;
   height: 55%;
-
 }
 
 .aside li {
