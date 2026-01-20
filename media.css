@@ -2,7 +2,6 @@
 Desktop - 1550px
 ******************************/
 
-
 @media only screen and (max-width: 1550px) {
   .hero-container {
     width: 70%;
@@ -13,11 +12,9 @@ Desktop - 1550px
   }
 }
 
-
 /****************************** 
 Desktop - 1300px
 ******************************/
-
 
 @media only screen and (max-width: 1300px) {
   .hero-container {
@@ -29,16 +26,13 @@ Desktop - 1300px
   }
 }
 
-
 /****************************** 
 Desktop - 1250px
 ******************************/
 
-
 @media only screen and (max-width: 1250px) {
-
   /**********   Global  **********/
-  
+
   .sidebar {
     width: 20%;
   }
@@ -92,14 +86,11 @@ Desktop - 1250px
   }
 }
 
-
 /****************************** 
 Desktop - 1050px
 ******************************/
 
-
 @media only screen and (min-width: 1050px) {
-
   /**********  Portfolio  **********/
 
   .project-btn {
@@ -119,23 +110,26 @@ Desktop - 1050px
     border-radius: 5px;
     font-weight: 500;
   }
-  
+
   .project-img-wrapper:hover .project-btn {
     opacity: 1;
   }
 }
 
 @media only screen and (max-width: 1050px) {
-
   /**********   Global  **********/
 
   header {
     display: none;
   }
 
-  main, 
+  main,
   footer {
     margin-left: 0;
+  }
+
+  .my-alert {
+    margin: 0;
   }
 
   /**********   Main Content  **********/
@@ -143,14 +137,12 @@ Desktop - 1050px
   .heading-2 {
     text-align: center;
   }
-  
+
   /**********  Portfolio  **********/
 
   .project-btn {
     display: none;
   }
-
-  
 
   /**********  Footer  **********/
 
@@ -162,14 +154,11 @@ Desktop - 1050px
   }
 }
 
-
 /****************************** 
 Tablets - 870px
 ******************************/
 
-
 @media only screen and (max-width: 870px) {
-
   /**********   Main Content  **********/
 
   .hero-wrapper {
@@ -201,14 +190,11 @@ Tablets - 870px
   }
 }
 
-
 /****************************** 
 Tablets - 768px
 ******************************/
 
-
 @media only screen and (max-width: 768px) {
-
   /**********   Global  **********/
 
   main,
@@ -241,9 +227,10 @@ Tablets - 768px
 
   .dark-overlay {
     background: linear-gradient(
-      180deg, 
-      rgba(0, 0, 0, 0.85), 
-      rgba(0, 0, 0, 0.95));
+      180deg,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.95)
+    );
   }
 
   .background-image {
@@ -433,7 +420,6 @@ Phones - 375px
 ******************************/
 
 @media only screen and (max-width: 375px) {
-
   form {
     width: 95%;
   }
