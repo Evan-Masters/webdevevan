@@ -1,8 +1,6 @@
-/******************************
-
-Golobal Styles  
-
-******************************/
+/*------------------------------------------------------------
+  Golobal Styles 
+------------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 :root {
@@ -131,13 +129,9 @@ footer {
   align-items: center;
 }
 
-
-/******************************
-
-Backgrounds
-
-******************************/
-
+/*------------------------------------------------------------
+  Backgrounds
+------------------------------------------------------------*/
 
 .background-image {
   background: url(assets/images/background-pattern.png);
@@ -157,21 +151,14 @@ Backgrounds
 }
 
 .dark-overlay {
-  background: linear-gradient(
-    180deg, 
-    rgba(0, 0, 0, 0.85), 
-    rgba(0, 0, 0, 0.95));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
   min-height: 50vh;
   min-width: 100%;
 }
 
-
-/****************************** 
-
-Header  
-
-******************************/
-
+/*------------------------------------------------------------
+  Header
+------------------------------------------------------------*/
 
 header {
   position: fixed;
@@ -202,13 +189,9 @@ header {
   text-align: center;
 }
 
-
-/******************************
-
-Navbar
-
-******************************/
-
+/*------------------------------------------------------------
+  Navbar
+------------------------------------------------------------*/
 
 .navbar {
   list-style-type: none;
@@ -258,13 +241,9 @@ Navbar
   border-bottom: 2px solid white;
 }
 
-
-/****************************** 
-
-Aside
-
-******************************/
-
+/*------------------------------------------------------------
+  Aside
+------------------------------------------------------------*/
 
 .aside-container {
   position: relative;
@@ -317,13 +296,9 @@ Aside
   box-shadow: 0 0 15px white;
 }
 
-
-/****************************** 
-
-Main Content
-
-******************************/
-
+/*------------------------------------------------------------
+  Main Content
+------------------------------------------------------------*/
 
 .hero-container {
   width: 60%;
@@ -373,13 +348,9 @@ Main Content
   height: 40px;
 }
 
-
-/****************************** 
-
-Skills and Technologies
-
-******************************/
-
+/*------------------------------------------------------------
+  Skills and Technologies
+------------------------------------------------------------*/
 
 .grid-container {
   display: -webkit-box;
@@ -416,13 +387,9 @@ Skills and Technologies
   font-weight: 300;
 }
 
-
-/******************************
-
-Portfolio
-
-******************************/
-
+/*------------------------------------------------------------
+  Portfolio
+------------------------------------------------------------*/
 
 .portfolio {
   background-color: var(--light-gray);
@@ -463,7 +430,7 @@ Portfolio
   align-items: center;
 }
 
-.project:hover img{
+.project:hover img {
   opacity: 0.6;
 }
 
@@ -496,11 +463,9 @@ Portfolio
   padding: 25px;
 }
 
-
-/****************************** 
-Footer
-******************************/
-
+/*------------------------------------------------------------
+  Footer
+------------------------------------------------------------*/
 
 .footer-container {
   display: -webkit-box;
@@ -677,6 +642,78 @@ button:hover {
   -webkit-animation: status 4s ease forwards;
   animation: status 4s ease forwards;
 }
+
+/*------------------------------------------------------------
+  Alert Banner
+------------------------------------------------------------*/
+
+.my-alert {
+  position: relative;
+  display: block;
+  padding: 10px 50px;
+  background-color: var(--main);
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  animation-name: alert;
+  animation-duration: 0.5s;
+  margin-left: 18%;
+}
+
+.my-alert a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.my-alert a:hover {
+  color: #fff;
+}
+
+.my-alert p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.my-alert p strong {
+  color: #fff;
+}
+
+.my-close-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  color: var(--main-dark);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.my-close-btn:hover {
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .my-alert p {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes alert {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*------------------------------------------------------------
+  Animations
+------------------------------------------------------------*/
 
 @-webkit-keyframes status {
   0% {
