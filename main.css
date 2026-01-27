@@ -311,7 +311,7 @@ header {
 
 .profile-picture img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   text-align: right;
 }
 
@@ -746,4 +746,5 @@ button:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
 
